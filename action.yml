@@ -15,3 +15,7 @@ runs:
     - name: Validate symlinks
       shell: bash
       run: ${{ github.action_path }}/bin/check-symlinks.sh ${{ inputs.directory }}
+
+branding:
+  icon: "file"
+  color: "purple"
