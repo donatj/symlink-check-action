@@ -1,0 +1,17 @@
+name: symlink-check-action
+description: Check that all symlinks in a directory point to a file that exists
+
+inputs:
+  directory:
+    description: The directory to start check
+    required: false
+    default: "."
+
+outputs: {}
+
+runs:
+  using: composite
+  steps:
+    - name: Validate symlinks
+      shell: bash
+      run: ${{ github.action_path }}/bin/check-symlinks.sh ${{ inputs.directory }}
