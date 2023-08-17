@@ -4,7 +4,9 @@ This simple action checks that all symlinks point to a valid file.
 
 ## Example
 
+<p align="center">
 <img width="682" alt="Symlink Error Exaple" src="https://github.com/donatj/symlink-check-action/assets/133747/078c5dd6-7395-4786-ba3b-67c1220ab94d">
+</p>
 
 ## Usage
 
